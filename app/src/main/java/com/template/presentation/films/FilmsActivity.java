@@ -1,4 +1,4 @@
-package com.template.presentation.home;
+package com.template.presentation.films;
 
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -6,7 +6,7 @@ import android.widget.Toast;
 
 import com.template.R;
 import com.template.domain.model.Film;
-import com.template.injector.module.HomeModule;
+import com.template.injector.module.FilmsModule;
 import com.template.presentation.common.TemplateActivity;
 import com.template.presentation.navigator.Navigator;
 import com.template.presentation.widget.spinner.SpinnerLoading;
@@ -43,7 +43,7 @@ public class FilmsActivity extends TemplateActivity implements FilmsView {
 
     @Override
     protected void setModule() {
-        getComponentsHelper().getAppComponent().plus(new HomeModule(this)).inject(this);
+        getComponentsHelper().getAppComponent().plus(new FilmsModule(this)).inject(this);
     }
 
     @Override

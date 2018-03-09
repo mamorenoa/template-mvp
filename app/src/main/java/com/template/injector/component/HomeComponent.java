@@ -1,15 +1,15 @@
 package com.template.injector.component;
 
 
-import com.template.injector.module.HomeModule;
-import com.template.presentation.home.FilmsActivity;
-import com.template.presentation.home.FilmsPresenter;
+import com.template.injector.module.FilmsModule;
+import com.template.presentation.films.FilmsActivity;
+import com.template.presentation.films.FilmsPresenter;
 
 import dagger.Subcomponent;
 
 @Subcomponent(
         modules = {
-                HomeModule.class
+                FilmsModule.class
         }
 )
 public interface HomeComponent {

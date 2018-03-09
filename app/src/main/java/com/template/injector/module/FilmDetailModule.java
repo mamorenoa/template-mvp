@@ -5,8 +5,8 @@ import android.app.Activity;
 import dagger.Module;
 
 @Module
-public class DetailModule extends ActivityModule {
-    public DetailModule(Activity activity) {
+public class FilmDetailModule extends ActivityModule {
+    public FilmDetailModule(Activity activity) {
         super(activity);
     }
 }

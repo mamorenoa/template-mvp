@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.template.R;
-import com.template.injector.module.DetailModule;
+import com.template.injector.module.FilmDetailModule;
 import com.template.presentation.common.TemplateActivity;
 
 public class DetailActivity extends TemplateActivity {
@@ -34,7 +34,7 @@ public class DetailActivity extends TemplateActivity {
 
     @Override
     protected void setModule() {
-        getComponentsHelper().getAppComponent().plus(new DetailModule(this)).inject(this);
+        getComponentsHelper().getAppComponent().plus(new FilmDetailModule(this)).inject(this);
     }
 
     @Override

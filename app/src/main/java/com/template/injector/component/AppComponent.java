@@ -5,8 +5,8 @@ import android.app.Application;
 import com.template.data.api.services.APIService;
 import com.template.domain.usecases.common.InteractorExecutor;
 import com.template.injector.module.AppModule;
-import com.template.injector.module.DetailModule;
-import com.template.injector.module.HomeModule;
+import com.template.injector.module.FilmDetailModule;
+import com.template.injector.module.FilmsModule;
 import com.template.injector.module.NetworkModule;
 import com.template.presentation.navigator.Navigator;
 
@@ -23,9 +23,9 @@ import me.panavtec.threaddecoratedview.views.ThreadSpec;
 public interface AppComponent {
 
     //Submodules
-    HomeComponent plus(HomeModule module);
+    HomeComponent plus(FilmsModule module);
 
-    DetailComponent plus(DetailModule module);
+    DetailComponent plus(FilmDetailModule module);
 
     //App general modules
     Application getApplication();

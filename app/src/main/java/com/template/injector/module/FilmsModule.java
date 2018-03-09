@@ -7,16 +7,16 @@ import com.template.data.api.services.APIService;
 import com.template.domain.usecases.GetFilmsUseCase;
 import com.template.domain.usecases.common.InteractorExecutor;
 import com.template.domain.repository.FilmsRepository;
-import com.template.presentation.home.FilmsPresenter;
+import com.template.presentation.films.FilmsPresenter;
 
 import dagger.Module;
 import dagger.Provides;
 import me.panavtec.threaddecoratedview.views.ThreadSpec;
 
 @Module
-public class HomeModule extends ActivityModule {
+public class FilmsModule extends ActivityModule {
 
-    public HomeModule(Activity activity) {
+    public FilmsModule(Activity activity) {
         super(activity);
     }
 

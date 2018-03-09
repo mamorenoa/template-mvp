@@ -1,4 +1,4 @@
-package com.template.presentation.home;
+package com.template.presentation.films;
 
 import com.template.domain.model.Film;
 import com.template.presentation.common.TemplateView;
